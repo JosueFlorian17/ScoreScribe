@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algoritmia Compiler</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- FontAwesome CDN para íconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Compilador de Algoritmia</h1>
+      <p>Escribe tu código en Algoritmia y presiona "Compilar".</p>
+    </header>
+
+    <div class="editor">
+      <textarea id="codigo" placeholder="Escribe tu código en Algoritmia aquí..." rows="15" cols="80"></textarea>
+    </div>
+
+    <button id="compilarBtn">Compilar</button>
+
+    <div class="resultados">
+      <h2>Archivos Generados:</h2>
+      <div id="archivosGenerados" class="archivos-container">
+      </div>
+      
+      <!-- Botones de descarga, se muestran después de compilar -->
+      <div id="descargas" style="display: none;">
+        <a href="archivos/out.pdf" download>
+          <button class="descargar-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1667px-PDF_file_icon.svg.png" alt="PDF" class="icon">
+            Descargar pdf
+          </button>
+        </a>
+        <a href="archivos/out.mid" download>
+          <button class="descargar-btn">
+            <img src="https://iconape.com/wp-content/files/jx/3914/png/01-107.png" alt="MIDI" class="icon">
+            Descargar mid
+          </button>
+        </a>
+        <a href="archivos/out.wav" download>
+          <button class="descargar-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/29/29101.png" alt="Audio" class="icon">
+            Descargar wav
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

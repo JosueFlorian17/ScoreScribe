@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: #4A90E2;
+}
+
+.editor {
+    margin: 20px 0;
+}
+
+textarea {
+    width: 100%;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+.resultados {
+    margin-top: 30px;
+}
+
+.archivos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#descargas {
+    display: flex;             /* Usamos flexbox para alinear los botones */
+    justify-content: space-between; /* Alineamos los botones horizontalmente */
+    gap: 20px;                /* Espacio entre los botones */
+    flex-wrap: wrap;          /* Permitimos que los botones se ajusten si es necesario */
+
+}
+
+.descargar-btn {          /* Estilo de los botones */
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;             /* Asignamos el mismo ancho a todos los botones */
+    height: 150px;            /* Asignamos la misma altura */
+    padding: 15px;
+    background-color: #176d69;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    flex-shrink: 0;           /* Evitamos que los botones se encojan */
+}
+
+.descargar-btn:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    width: 70%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.descargar-btn img {
+    max-width: 50px;          /* Ajustamos el tamaño de los íconos */
+    height: auto;
+}
+
+#descargas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.descargar-enlace {
+    display: none;
+}
+
+/* Eliminar subrayado de los enlaces */
+a {
+    text-decoration: none;    /* Elimina la línea azul debajo del enlace */
+}
